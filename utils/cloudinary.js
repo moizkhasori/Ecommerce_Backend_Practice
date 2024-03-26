@@ -4,9 +4,9 @@ import { ErrorHandler } from './ErrorHandler.js';
 import { TryCatch } from '../middlewares/TryCatch.js';
           
 cloudinary.config({ 
-  cloud_name: 'ddciuxhsy', 
-  api_key: '449363692469398', 
-  api_secret: 'ruXQEj_BJRtQkR6w7kZbpwMdR9I' 
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+  api_key: process.env.CLOUDINARY_API_KEY, 
+  api_secret: process.env.CLOUDINARY_API_SECRET, 
 });
 
 
